@@ -1,10 +1,11 @@
+import HeroSection from "./Components/HeroSection/HeroSection"
 
 function App() {
 
   return (
-    <div>
-
-    </div>
+    <main>
+      <HeroSection />
+    </main>
   )
 }
 
