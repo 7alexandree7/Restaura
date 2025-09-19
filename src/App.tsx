@@ -2,6 +2,7 @@
 import Dishes from "./Components/Dishes/Dishes"
 import HeroSection from "./Components/HeroSection/HeroSection"
 import NavBar from "./Components/NavBar/NavBar"
+import About from "./Components/About/About"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <NavBar />
       <Dishes />
+      <About />
     </main>
   )
 }
