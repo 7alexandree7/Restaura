@@ -14,14 +14,15 @@ const NavBar = () => {
 
     const handleScroll = (event: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
         event.preventDefault()
-        const targetElement = document.getElementById(targetId) as HTMLElement | null
+        const targetElement = document.getElementById(targetId)
         if (targetElement){
-            const offsetTop = targetElement.offsetTop - 80
+            const offsetTop = targetElement.offsetTop - 80  
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
             })
         }
+
         setIsMoblieMenuOpen(false)
     }
 
@@ -36,7 +37,8 @@ const NavBar = () => {
                         <a
                             key={index}
                             href={`#${link.targetId}`}
-                            className={`text-sm ${index != 0 ? "border-l-2 border-neutral-300/20 pl-2" : ""} hover:opcacity-50`}
+                            className={`text-sm ${index != 0 ? "border-l-2 border-neutral-300/20 pl-2" : ""} hover:opacity-50`}
+                            onClick={(event) => handleScroll(event, link.targetId)}
                         >
                             {link.text}
                         </a>
@@ -56,8 +58,8 @@ const NavBar = () => {
                         <a
                             key={index}
                             href={`#${link.targetId}`}
-                            className="uppecase block p-4 trackiing-tighter"
-                            onClick={(e) => handleScroll(e, link.targetId)}
+                            className="uppercase block p-4 tracking-tighter"
+                            onClick={(event) => handleScroll(event, link.targetId)}
                         >
                             {link.text}
                         </a>
