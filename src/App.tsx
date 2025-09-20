@@ -3,6 +3,7 @@ import Dishes from "./Components/Dishes/Dishes"
 import HeroSection from "./Components/HeroSection/HeroSection"
 import NavBar from "./Components/NavBar/NavBar"
 import About from "./Components/About/About"
+import Mission from "./Components/Mission/Mission"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Dishes />
       <About />
+      <Mission />
     </main>
   )
 }
