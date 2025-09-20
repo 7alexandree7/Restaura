@@ -4,6 +4,7 @@ import HeroSection from "./Components/HeroSection/HeroSection"
 import NavBar from "./Components/NavBar/NavBar"
 import About from "./Components/About/About"
 import Mission from "./Components/Mission/Mission"
+import Expertise from "./Components/Expertise/Expertise"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Dishes />
       <About />
       <Mission />
+      <Expertise />
     </main>
   )
 }
