@@ -6,6 +6,7 @@ import About from "./Components/About/About"
 import Mission from "./Components/Mission/Mission"
 import Expertise from "./Components/Expertise/Expertise"
 import Reviews from "./Components/Reviews/Reviews"
+import Contact from "./Components/Contact/Contact"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Mission />
       <Expertise />
       <Reviews />
+      <Contact />
     </main>
   )
 }
