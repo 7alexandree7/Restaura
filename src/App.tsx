@@ -7,6 +7,7 @@ import Mission from "./Components/Mission/Mission"
 import Expertise from "./Components/Expertise/Expertise"
 import Reviews from "./Components/Reviews/Reviews"
 import Contact from "./Components/Contact/Contact"
+import Footer from "./Components/Footer/Footer"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Expertise />
       <Reviews />
       <Contact />
+      <Footer />
     </main>
   )
 }
